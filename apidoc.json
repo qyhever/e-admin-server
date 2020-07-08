@@ -1,0 +1,21 @@
+{
+  "name": "api文档",
+  "version": "0.0.0",
+  "description": "e-admin",
+  "title": "api文档",
+  "url" : "https://qyhever.com/e-admin",
+  "sampleUrl": "https://qyhever.com/e-admin",
+  "order": [
+    "Upload"
+  ],
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  },
+   "header": {
+    "title": "回到底部"
+  },
+  "footer": {
+    "title": "回到顶部"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "koa-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development nodemon bin/www",
+    "prod": "cross-env NODE_ENV=production pm2 start bin/www",
+    "api": "apidoc -i ./controllers/ -o public/docs",
+    "lint": "eslint --color -f codeframe --ext .js,.jsx **/*.js config controllers database middlewares routes utils app.js",
+    "lint:fix": "eslint --fix --color --ext .js,.jsx **/*.js config controllers database middlewares routes utils app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.2.0",
+    "koa-jwt": "^4.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "module-alias": "^2.2.2",
+    "mysql2": "^2.1.0",
+    "qiniu": "^7.3.2",
+    "require-directory": "^2.1.1",
+    "sequelize": "^6.2.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^1.19.1"
+  },
+  "_moduleAliases": {
+    "@": "./"
+  }
+}
